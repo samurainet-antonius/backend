@@ -16,3 +16,9 @@
  
  <p>Berikut ini dokumentasi api yang akan digunakan, dokumentasi ini akan berubah tanpa adanya pemberitahuan sesuai dengan update pada aplikasi.</p>
  <a href="https://documenter.getpostman.com/view/9640381/UVRAHn2M" target="_blank">Dokumentasi API using Postman</a>
+
+<p><b>*<i>Usahakan saat menjalankan service ini menggunakan port 8000, agar tidak terjadi error pada sisi frontend .</i></b></p>
+<p><b>*<i>Lakukan migrasi dengan cara php artisan migrate:refresh --seed .</i></b></p>
+<p><b>*<i>Untuk data dummy berada pada folder dabatase/seeder/MembersSeeder.php .</i></b></p>
+
+
