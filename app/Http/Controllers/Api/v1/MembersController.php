@@ -27,9 +27,13 @@ class MembersController extends Controller
     public function list(Request $request){
         try{
 
+            $limit = ($request->has(self::LIMIT)) ? $request->limit : 4;
+            $offset = ($request->has(self::OFFSET)) ? ($request->offset*$limit)-$limit : 1;
             $total = Member::all()->count();
             $members = Member::orderBy('created_at','desc')
-                            ->paginate(4);
+                            ->offset($offset)
+                            ->limit($limit)
+                            ->get();
             
             $count = $members->count();
 

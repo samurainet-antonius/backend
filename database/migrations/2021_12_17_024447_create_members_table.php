@@ -18,7 +18,7 @@ class CreateMembersTable extends Migration
             $table->string('nama',200);
             $table->string('email',200);
             $table->string('alamat',200);
-            $table->string('avatar',200);
+            $table->string('avatar',200)->nullable();
             $table->uuid('uuid');
             $table->timestamps();
         });
